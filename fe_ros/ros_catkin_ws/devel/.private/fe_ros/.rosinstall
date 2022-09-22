@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/student/fe_ros/ros_catkin_ws/devel/.private/fe_ros/setup.sh

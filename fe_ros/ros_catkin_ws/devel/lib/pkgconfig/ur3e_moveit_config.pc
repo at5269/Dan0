@@ -1,0 +1,1 @@
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur3e_moveit_config/lib/pkgconfig/ur3e_moveit_config.pc

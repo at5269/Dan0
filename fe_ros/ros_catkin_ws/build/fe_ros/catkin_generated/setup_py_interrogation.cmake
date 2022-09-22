@@ -1,0 +1,7 @@
+set(fe_ros_SETUP_PY_SETUP_MODULE "distutils.core")
+set(fe_ros_SETUP_PY_VERSION "0.1.0")
+set(fe_ros_SETUP_PY_SCRIPTS "")
+set(fe_ros_SETUP_PY_PACKAGES "fe_moveit")
+set(fe_ros_SETUP_PY_PACKAGE_DIRS "src/fe_moveit")
+set(fe_ros_SETUP_PY_MODULES "")
+set(fe_ros_SETUP_PY_MODULE_DIRS "")

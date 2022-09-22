@@ -1,0 +1,59 @@
+<launch>
+
+  <!-- By default, we are not in debug mode -->
+  <arg name="debug" default="false" />
+
+  <!--
+  By default, hide joint_state_publisher's GUI
+
+  MoveIt!'s "demo" mode replaces the real robot driver with the joint_state_publisher.
+  The latter one maintains and publishes the current joint configuration of the simulated robot.
+  It also provides a GUI to move the simulated robot around "manually".
+  This corresponds to moving around the real robot without the use of MoveIt.
+  -->
+  <arg name="use_gui" default="true" />
+  <arg name="use_rviz" default="true" />
+
+  <!-- Load the 3D model of the robot onto the parameter server -->
+  <param name="robot_description" command="xacro  '$(find fe_ur)/description/urko.xacro'"/>
+
+  <!-- Load limits onto the parameter server -->
+  <group ns="robot_description_planning">
+    <rosparam command="load" file="$(find fe_ur)/config/joint_limits_accel.yaml"/>
+    <rosparam command="load" file="$(find fe_ur)/config/cartesian_limits.yaml"/>
+    <rosparam command="load" file="$(find fe_ur)/config/kinematics.yaml"/>
+  </group>
+  <rosparam command="load" file="$(find fe_ur)/config/kinematics.yaml"/>
+
+
+  <!-- We do not have a robot connected, so publish fake joint states -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg use_gui)">
+    <rosparam param="source_list">[move_group/fake_controller_joint_states]</rosparam>
+  </node>
+  <node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" if="$(arg use_gui)">
+    <rosparam param="source_list">[move_group/fake_controller_joint_states]</rosparam>
+  </node>
+
+  <!-- Given the published joint states, publish tf for the robot links -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+  <!-- The semantic description that corresponds to the URDF -->
+  <param name="robot_description_semantic" textfile="$(find fe_ur)/config/urko.srdf" />
+
+  <!-- MoveIt  -->
+  <include file="$(find fe_ros)/launch/include/move_group.launch.xml">
+      <!-- Run the main MoveIt! executable without trajectory execution (we do not have controllers configured by default) -->
+      <arg name="allow_trajectory_execution" value="true"/>
+      <arg name="fake_execution" value="true"/>
+  </include>>
+
+
+
+
+  <!-- Run Rviz and load the default config to see the state of the move_group node -->
+  <include file="$(find ur10e_moveit_config)/launch/moveit_rviz.launch" if="$(arg use_rviz)">
+    <arg name="rviz_config" value="$(find fe_ros)/config/pilz.rviz"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+</launch>

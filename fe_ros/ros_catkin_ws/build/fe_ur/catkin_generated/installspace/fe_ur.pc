@@ -1,0 +1,8 @@
+prefix=/home/student/fe_ros/ros_catkin_ws/install
+
+Name: fe_ur
+Description: Description of fe_ur
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

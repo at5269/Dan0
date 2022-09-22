@@ -1,0 +1,1 @@
+/home/student/fe_ros/ros_catkin_ws/devel/.private/fe_ros/lib/python2.7/dist-packages/fe_moveit/__init__.py

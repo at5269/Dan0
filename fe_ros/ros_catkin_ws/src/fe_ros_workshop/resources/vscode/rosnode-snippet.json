@@ -1,0 +1,28 @@
+"RosNode": {
+    "prefix": ["ros-node"],
+    "body": [
+"#!/usr/bin/env python2",
+"",
+"import rospy",
+"",
+"",
+"class ${1:ClassName}(object):",
+"",
+"\tdef __init__(self):",
+"\t\treturn",
+"",
+"",
+"if __name__ == '__main__':",
+"\trospy.init_node('${2:node_name}')",
+"\ttry:",
+"\t\t${1:ClassName}()",
+"\texcept Exception as e:",
+"\t\trospy.logerr(\"Exception when initializing the node. Exception:\\n{}\".format(e))",
+"\telse:",
+"\t\trospy.loginfo(\"Node '{}' started.\".format(rospy.get_name()))",
+"\t\trospy.spin()",
+"\tfinally:",
+"\t\trospy.loginfo(\"Exiting '{}' node ...\".format(rospy.get_name()))",
+    ],
+    "description": "Code snippet for ROS FE nodes."
+  }

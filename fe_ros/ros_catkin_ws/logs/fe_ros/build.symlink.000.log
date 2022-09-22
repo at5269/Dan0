@@ -1,0 +1,4 @@
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/fe_ros/cmake/fe_rosConfig-version.cmake
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/fe_ros/cmake/fe_rosConfig.cmake
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/lib/python2.7/dist-packages/fe_moveit/__init__.py
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/lib/pkgconfig/fe_ros.pc

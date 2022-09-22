@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fe_ros_workshop</name>
+  <version>0.1.0</version>
+  <description>The fe_ros_workshop meta-package</description>
+
+  <maintainer email="timotej.gaspar@fe.uni-lj.si">Timotej Gaspar</maintainer>
+  <author email="timotej.gaspar@fe.uni-lj.si">Timotej Gaspar</author>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>fe_ros</exec_depend>
+  <exec_depend>fe_msgs</exec_depend>
+  <exec_depend>fe_ur</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+     <metapackage/>
+  </export>
+</package>

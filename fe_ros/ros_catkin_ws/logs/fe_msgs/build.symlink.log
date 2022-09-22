@@ -1,0 +1,7 @@
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/roseus/ros/fe_msgs/manifest.l
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/fe_msgs/cmake/fe_msgsConfig.cmake
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/fe_msgs/cmake/fe_msgs-msg-paths.cmake
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/fe_msgs/cmake/fe_msgs-msg-extras.cmake
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/share/fe_msgs/cmake/fe_msgsConfig-version.cmake
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/lib/python2.7/dist-packages/fe_msgs/__init__.py
+Symlinking /home/student/fe_ros/ros_catkin_ws/devel/lib/pkgconfig/fe_msgs.pc

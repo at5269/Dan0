@@ -1,0 +1,5 @@
+fe_ros_workshop/fe_ur
+/home/student/fe_ros/ros_catkin_ws/devel/.private/fe_ur/cmake.lock /home/student/fe_ros/ros_catkin_ws/devel/./cmake.lock
+/home/student/fe_ros/ros_catkin_ws/devel/.private/fe_ur/share/fe_ur/cmake/fe_urConfig.cmake /home/student/fe_ros/ros_catkin_ws/devel/share/fe_ur/cmake/fe_urConfig.cmake
+/home/student/fe_ros/ros_catkin_ws/devel/.private/fe_ur/share/fe_ur/cmake/fe_urConfig-version.cmake /home/student/fe_ros/ros_catkin_ws/devel/share/fe_ur/cmake/fe_urConfig-version.cmake
+/home/student/fe_ros/ros_catkin_ws/devel/.private/fe_ur/lib/pkgconfig/fe_ur.pc /home/student/fe_ros/ros_catkin_ws/devel/lib/pkgconfig/fe_ur.pc

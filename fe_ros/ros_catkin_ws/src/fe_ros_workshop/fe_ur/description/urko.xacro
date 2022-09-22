@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="urko" >
+
+  <!-- <xacro:arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface"/> -->
+
+  <!-- common stuff -->
+  <!-- <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro" /> -->
+
+  <!-- ur10 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur10.xacro" />
+
+  <!-- Table  -->
+  <material name="blue">
+    <color rgba="0.55 0.78 0.95 1"/>
+  </material>
+
+  <link name="robot_base">
+    <visual>
+      <geometry>
+        <box size="1.0 0.6 0.8"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.0 0.6 0.8"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="world_joint" type="fixed">
+    <parent link="base_link" />
+    <child link = "robot_base" />
+    <origin xyz="0.25 0.0 -0.4" rpy="0.0 0.0 0.0" />
+  </joint>
+
+</robot>

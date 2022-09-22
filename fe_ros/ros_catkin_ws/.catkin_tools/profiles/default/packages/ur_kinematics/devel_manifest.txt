@@ -1,0 +1,12 @@
+universal_robot/ur_kinematics
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/cmake.lock /home/student/fe_ros/ros_catkin_ws/devel/./cmake.lock
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake /home/student/fe_ros/ros_catkin_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake /home/student/fe_ros/ros_catkin_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/libur3_kin.so /home/student/fe_ros/ros_catkin_ws/devel/lib/libur3_kin.so
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/libur5_moveit_plugin.so /home/student/fe_ros/ros_catkin_ws/devel/lib/libur5_moveit_plugin.so
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/libur10_kin.so /home/student/fe_ros/ros_catkin_ws/devel/lib/libur10_kin.so
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/libur3_moveit_plugin.so /home/student/fe_ros/ros_catkin_ws/devel/lib/libur3_moveit_plugin.so
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/libur5_kin.so /home/student/fe_ros/ros_catkin_ws/devel/lib/libur5_kin.so
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/libur10_moveit_plugin.so /home/student/fe_ros/ros_catkin_ws/devel/lib/libur10_moveit_plugin.so
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages/ur_kinematics/__init__.py /home/student/fe_ros/ros_catkin_ws/devel/lib/python2.7/dist-packages/ur_kinematics/__init__.py
+/home/student/fe_ros/ros_catkin_ws/devel/.private/ur_kinematics/lib/pkgconfig/ur_kinematics.pc /home/student/fe_ros/ros_catkin_ws/devel/lib/pkgconfig/ur_kinematics.pc

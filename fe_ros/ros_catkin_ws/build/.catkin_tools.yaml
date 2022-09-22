@@ -1,0 +1,6 @@
+devel_space: /home/student/fe_ros/ros_catkin_ws/devel
+install: false
+install_space: /home/student/fe_ros/ros_catkin_ws/install
+profile: default
+source_space: /home/student/fe_ros/ros_catkin_ws/src
+workspace: /home/student/fe_ros/ros_catkin_ws

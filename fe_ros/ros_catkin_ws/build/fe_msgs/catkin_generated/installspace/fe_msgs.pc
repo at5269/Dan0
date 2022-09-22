@@ -1,0 +1,8 @@
+prefix=/home/student/fe_ros/ros_catkin_ws/install
+
+Name: fe_msgs
+Description: Description of fe_msgs
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_srvs std_msgs geometry_msgs sensor_msgs

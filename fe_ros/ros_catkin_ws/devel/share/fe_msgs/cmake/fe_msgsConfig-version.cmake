@@ -1,0 +1,1 @@
+/home/student/fe_ros/ros_catkin_ws/devel/.private/fe_msgs/share/fe_msgs/cmake/fe_msgsConfig-version.cmake

@@ -1,0 +1,7 @@
+cartesian_limits:
+  max_trans_vel: 2
+  max_trans_acc: 2.25
+  max_trans_dec: -5
+  max_rot_vel: 3.14
+
+# todo get for every robot model

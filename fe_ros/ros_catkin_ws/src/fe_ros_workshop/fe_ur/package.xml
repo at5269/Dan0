@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fe_ur</name>
+  <version>0.1.0</version>
+  <description>The fe_ros_workshop meta-package</description>
+
+  <maintainer email="timotej.gaspar@fe.uni-lj.si">Timotej Gaspar</maintainer>
+  <author email="timotej.gaspar@fe.uni-lj.si">Timotej Gaspar</author>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- <exec_depend>ur_driver</exec_depend> -->
+  <exec_depend>ur_bringup</exec_depend>
+  <exec_depend>ur_description</exec_depend>
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+  </export>
+</package>

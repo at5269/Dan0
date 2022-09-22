@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- Tell all the nodes to use the simulated (bag) time -->
+  <param name="/use_sim_time" value="true" />
+
+  <node pkg="rosbag" type="play" name="player" output="screen" args="--clock -l $(find fe_ros)/data/sick_nanoscan3_test.bag"/>
+  <node pkg="tf" type="static_transform_publisher" name="static_tf_publisher" args="0 0 0 0 0 0 base_link scan 100" />
+  <node pkg="fe_ros" type="pilz_interrupt_motion.py" name="pilz_interrupt_motion" output="screen"/>
+
+  <include file="$(find fe_ur)/launch/urko_pilz_demo.launch">
+    <arg name="use_gui" value="false" />
+    <arg name="use_rviz" value="true" />
+  </include>
+</launch>
